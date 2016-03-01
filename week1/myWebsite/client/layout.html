@@ -1,13 +1,19 @@
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <!-- RSS posts lnk -->
+  <link rel="alternate" type="application/rss+xml" title="My blog title" href="/rss/posts">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+</body>
+
 <template name="layout">
 	{{> header}}
 
-	<div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-      </div>
-    </div>
-
-	{{> yield}}
+	<div class="container">
+		{{> yield "main"}}
+	</div>
 </template>

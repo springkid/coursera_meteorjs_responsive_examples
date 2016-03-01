@@ -2,7 +2,12 @@ Router.configure({
   layoutTemplate: 'layout'
 });
 Router.route('/', function () {
-  this.render('home');
+  this.render('home', {
+  	to: 'main' 
+  });
+  this.render('header', {
+  	to: 'navbar'
+  });
 });
 Router.route('/projects', function () {
   this.render('projects');

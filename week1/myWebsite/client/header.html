@@ -1,12 +1,5 @@
-<head>
-  <meta charset="UTF-8">
-  <title>My Portfolio</title>
-  <!-- RSS posts lnk -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
 <template name="header">
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header">
         <a href="/" class="navbar-brand">Portfolio</a>
@@ -20,13 +13,9 @@
             <!--<a href="{{blogPathFor "blogIndex"}}">Blog</a>-->
             <a href="/blog">Blog</a>
           </li>
-          <li>
-            <!--<a href="{{blogPathFor "blogAdmin"}}">Admin Area (must login)</a>-->
-            <a href="/admin/blog">Admin Area (must login)</a>
-          </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          {{> loginButtons align="right"}}
+          {{> loginButtons }}
         </ul>
       </div>
     </div> <!-- /container-fluid -->
