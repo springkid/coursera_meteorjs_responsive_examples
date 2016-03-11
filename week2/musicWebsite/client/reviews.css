@@ -1,0 +1,15 @@
+.front {
+	/* This image will be displayed fullscreen */
+	background:url('background1.jpg') no-repeat center center;
+	/* Ensure the html element always takes up the full height of the browser window */
+	min-height:100%;
+	/* The Magic */
+	background-size:cover;
+	height: 500px;
+	padding-bottom: 60px;
+}
+
+body{
+	/* Workaround for some mobile browsers */
+	min-height:100%;
+}

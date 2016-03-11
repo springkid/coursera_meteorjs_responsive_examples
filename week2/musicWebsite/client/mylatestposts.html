@@ -1,0 +1,9 @@
+<template name="myLatestPostswidget">
+	<p>Last 5 posts from our blog</p>
+	<ul>
+		{{#each post }}
+			<li>{{ title }}</li>
+		{{ /each }}
+	</ul>
+	
+</template>
