@@ -10,7 +10,12 @@ Router.route('/', function () {
   });
 });
 
-Router.route('/news', function () {
-  this.render('news');
-  console.log('Rendering news');
+Router.route('/about', function () {
+  this.render('about');
+  console.log('Rendering about');
+});
+
+Router.route('/reviews', function () {
+  this.render('reviews');
+  console.log('Rendering reviews');
 });

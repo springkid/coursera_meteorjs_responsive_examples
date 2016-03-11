@@ -1,8 +1,11 @@
 Blog.config({
-  title: "Portfolio Website",
-
+  title: "My Fav Music Website",
   rss: {
-    title: 'My Portfolio Website',
-    description: 'This is an example of a portfolio website'
-  }
+    title: 'My Fav Music',
+    description: 'The place where your favourite music is'
+  },
+  excerptFunction: function(body) {
+    return body.split('.')[0] + '.';
+  },
+  pageSize: 10
 });

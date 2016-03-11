@@ -1,5 +1,13 @@
 <template name="home">
   <div class="container">
-      Welcome to My Music website.
+      <h3>Welcome to My Fav Music website.</h3>
+      <p>The place where you can find information about your favourite music.</p>
+
+      <div class="row">
+      	<div class="col-sm-12 col-md-6">
+			{{> blogLatest num=5}}
+      	</div>
+      </div>
+
   </div>
 </template>
